@@ -1,5 +1,5 @@
 
-FROM ubuntu
+FROM ubuntu:16.04
 
 RUN apt-get update \
   && apt-get install -yq build-essential cmake python3 \

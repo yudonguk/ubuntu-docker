@@ -1,8 +1,8 @@
 
-FROM ubuntu:16.04
+FROM iiclab/ubuntu:14.04
 
 RUN apt-get update \
-  && apt-get install -yq build-essential cmake python3 curl autoconf libtool pkg-config \
+  && apt-get install -yq build-essential python3 curl autoconf libtool pkg-config \
   && apt-get -yq upgrade \
   && apt-get autoremove \
   && apt-get clean

@@ -12,7 +12,7 @@ RUN XENOMAI_NAME="xenomai-3.0.3" \
   && tar -xf ${XENOMAI_NAME}.tar.bz2 \
   && cd ${XENOMAI_NAME} \
   && ./scripts/bootstrap \
-  && ./configure --enable-smp --enable-pshared \
+  && ./configure –-with-core=mercury --enable-pshared \
   && make install \
   && cd .. \
   && rm -rf ${XENOMAI_NAME}
